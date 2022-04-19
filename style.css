@@ -4,8 +4,7 @@ html {
 }
 
 body {
-    background: url(./images/bg.webp);
-    /* background-attachment: fixed; */
+    background: url(./images/bg.jpg);
 }
 
 * {
