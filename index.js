@@ -31,9 +31,16 @@ function search() {
     }
 
     if (b == true) {
+
+        var loader = document.getElementById("load").style.display = "block";
+
+
         setTimeout(() => {
+            var loader = document.getElementById("load").style.display = "none";
+
+
             var bb2 = document.getElementById("bb2").style.display = "block";
-        }, 2000)
+        }, 3000)
     }
 
 
