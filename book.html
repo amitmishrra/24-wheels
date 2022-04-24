@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>24-Wheels</title>
     <link rel="logo" href="">
-    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="/book.css">
     <script src="https://kit.fontawesome.com/afd97fb027.js" crossorigin="anonymous"></script>
 
 
@@ -96,19 +96,28 @@
 
                 <div id="bb2" class="bb2">
 
-                    <div>
-                        <p class="p"> Vehicles are available for your journey from <span class="s" id="sfrom">_</span> to <span class="s" id="sto">_</span>.</p>
-                    </div>
-
-                    <div> <button class="btn">Book Now</button></div>
+                    <p class="p"> Vehicles are available for your journey from <span class="s" id="sfrom">_</span> to <span class="s" id="sto">_</span>.</p>
 
 
 
+                    <form action="/bookride.html">
+                        <div> <button type="submit" class="btn">Book Now</button></div>
+                    </form>
+
+
+                    <form action="./ride.html">
+                        <div> <button class="btn">Self Ride</button></div>
+                    </form>
 
                 </div>
 
 
+
+
             </div>
+
+
+        </div>
 
 
 
@@ -132,7 +141,7 @@
 
 
 
-    <script src="book.js"></script>
+    <script src="/book.js"></script>
 </body>
 
 </html>

@@ -12,6 +12,14 @@ var x = true;
 
 function sig() {
 
+
+
+
+
+
+
+
+
     var name = document.getElementById('name').value;
     console.log(name);
 

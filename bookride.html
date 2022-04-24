@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Ride</title>
+    <link rel="logo" href="">
+    <link rel="stylesheet" href="./bookride.css">
+    <script src="https://kit.fontawesome.com/afd97fb027.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+</head>
+
+<body>
+    <section class="navbar">
+
+        <div class="logo">
+            <span id="sp1">24 -</span>
+            <span id="sp2">Wheels</span>
+
+        </div>
+
+
+        <div id="slidebar">
+            <div id="toggle" onclick="show()">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+            <ul class="ul">
+                <li> <a onclick="show()" href="#home">Home</a></li>
+
+                <li> <a onclick="show()" href="#">Book Now</a></li>
+
+                <li> <a onclick="show()" href="#">Register</a></li>
+
+                <li> <a onclick="show()" href="#">Contact Us</a></li>
+
+            </ul>
+        </div>
+    </section>
+
+
+
+    <section id="home">
+
+        <div class="box1">
+
+            <div class="b1">
+
+                <h1>Make your ride memorable with Us....</h1>
+                <p>
+
+                    Here's your one solution to all your travel hunger and daily issues. Book your vehicle now
+                </p>
+
+            </div>
+
+
+
+            <div class="b2">
+
+                <div class="bb">
+
+
+                    <h1>
+                        Hire the best car at the best price
+                    </h1>
+
+                    <div class="input mr">
+
+                        <input required type="text" name="name" class="in" id="name">
+                        <label for="" class="lab">Name</label>
+                    </div>
+
+                    <div class="input mr">
+
+                        <input required type="tel" name="number" class="in" id="number">
+                        <label for="" class="lab">Number</label>
+                    </div>
+                    <div class="input mr">
+
+                        <input required type="email" name="mail" class="in" id="mail">
+                        <label for="" class="lab">Mail</label>
+                    </div>
+
+                    <div class="input mr">
+
+                        <label for="" id="gen">Gender : </label>
+
+                        <span>
+                            <input required type="radio" name="gender" class="lab-a" id="gender1"> <span class="lab-a">Male</span> <input required type="radio" name="gender" class="lab-a" id="gender"> <span class="lab-a">Female</span>                        </span>
+
+
+                    </div>
+
+                    <div class="input mr">
+
+                        <input required type="text" name="number" class="in" id="age">
+                        <label for="" class="lab">Age</label>
+                    </div>
+
+                    <div class="input mr">
+
+                        <input required type="text" name="location" class="in" id="from">
+                        <label for="" class="lab"> <i class="fa-solid fa-location-dot"></i> Your Location</label>
+                    </div>
+
+                    <div class="input mr">
+
+                        <input required type="text" name="destinantion" class="in" id="to">
+                        <label for="" class="lab"> <i class="fa-solid fa-location-dot"></i> Your Destination</label>
+                    </div>
+                    <div class="input mr">
+
+                        <input required type="datetime-local" name="datetime" class="in" id="datetime">
+
+                    </div>
+
+                    <div class="input mr">
+                        <ul id="ul">
+                            <li>
+                                Your age must be above 18.
+                            </li>
+                            <li>
+                                Pay the fair charges to the owner of the vehicle.
+                            </li>
+                            <li>
+                                By clicking "Ride", you agree to 24-Wheel's Terms of Use and acknowledge you have read the Privacy Policy.
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="input mr">
+                        <BUtton id="btn1" onclick="book();" type="submit" class="btn">Book</BUtton>
+                    </div>
+
+
+
+                    <div id="load" class="loader mr"></div>
+
+                    <div class="msg mr" id="message">
+                        Dear <span class="sp" id="n">_</span>, <br> Your vehicle has been succesfully booked for ride from <span class="sp" id="l">_</span> to <span class="sp" id="d"></span> on <span class="sp" id="dt">_</span>. We have sent you a 6-digits
+                        OTP on your email
+                        <Span class="sp" id="m2"></Span>. Please validate the OTP with the driver of vehicle.
+
+                        <br>
+                        <br> Vehicle Details :
+                        <br>
+
+                        <br> Driver :
+                        <Span class="sp" id="o">___</Span><br> Contact :
+                        <Span class="sp" id="c">XXXXX-XXXXX</Span><br> Vehicle Number :
+                        <Span class="sp" id="vn">___</Span><br>
+                        <br><br> We wish you a happy and safe ride. <br> - 24 Wheels
+                    </div>
+
+
+                    <div class="error mr" id="error">
+                        Something Went wrong!! please try again
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+    <script src="/bookride.js"></script>
+</body>
+
+</html>
