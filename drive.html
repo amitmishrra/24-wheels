@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive & earn </title>
+    <link rel="logo" href="">
+    <link rel="stylesheet" href="drive.css">
+    <script src="https://kit.fontawesome.com/afd97fb027.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+</head>
+
+<body>
+    <section class="navbar">
+
+        <div class="logo">
+            <span id="sp1">24 -</span>
+            <span id="sp2">Wheels</span>
+
+        </div>
+
+
+        <div id="slidebar">
+            <div id="toggle" onclick="show()">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+            <ul class="ul">
+                <li> <a onclick="show()" href="#home">Home</a></li>
+
+                <li> <a onclick="show()" href="#">Book Now</a></li>
+
+                <li> <a onclick="show()" href="#">Register</a></li>
+
+                <li> <a onclick="show()" href="#">Contact Us</a></li>
+
+            </ul>
+        </div>
+    </section>
+
+
+
+    <section id="home">
+
+        <div class="box1">
+
+            <div class="b1">
+
+                <h1>Drive and earn with 24-Wheels</h1>
+                <p> You can drive and make as much as you want. And, the more you drive, the more you could make. Plus, your fares get automatically deposited weekly.
+                </p>
+
+            </div>
+
+
+
+            <div class="b2">
+
+                <div class="bb mr">
+
+
+                    <h1>
+                        Drive and Earn
+                    </h1>
+
+                    <div class="input mr">
+
+                        <input required type="text" name="name" class="in" id="name">
+                        <label for="" class="lab">Name</label>
+                    </div>
+
+                    <div class="input mr">
+
+                        <input required type="tel" name="number" class="in" id="number">
+                        <label for="" class="lab">Number</label>
+                    </div>
+                    <div class="input mr">
+
+                        <input required type="email" name="number" class="in" id="mail">
+                        <label for="" class="lab">E-mail</label>
+                    </div>
+
+                    <div class="input mr">
+
+                        <label for="" id="gen">Gender : </label>
+
+                        <span>
+                            <input required type="radio" name="gender" class="lab-a" id="gender1"> <span class="lab-a">Male</span> <input required type="radio" name="gender" class="lab-a" id="gender"> <span class="lab-a">Female</span>                        </span>
+
+
+                    </div>
+
+                    <div class="input mr">
+
+                        <input required type="text" name="age" class="in" id="age">
+                        <label for="" class="lab">Age</label>
+                    </div>
+
+                    <div class="input mr">
+
+                        <input required type="text" name="lic" class="in" id="lic">
+                        <label for="" class="lab">Licance Number</label>
+                    </div>
+
+                    <div class="input mr">
+
+                        <!-- <label for="" id="gen">Own a vehicle  : </label> -->
+
+                        <span>
+                            <input required type="radio" name="have_vehicle" class="lab-a" id="gender1"> <span class="lab-a">I have a car</span> <input required type="radio" name="have_vehicle" class="lab-a" id="gender">
+                        <span class="lab-a">I need a car</span>
+                        </span>
+
+                    </div>
+
+                    <div class="input mr">
+
+                        <ul id="ul">
+                            <li>
+                                Your age must be above 18.
+                            </li>
+                            <li>
+                                By clicking "Register", you agree to 24-Wheel's Terms of Use and acknowledge you have read the Privacy Policy.
+                            </li>
+                        </ul>
+
+
+                    </div>
+
+
+
+                    <div class="input mr">
+                        <BUtton id="btn1" type="submit" onclick="drive();" class="btn">Register</BUtton>
+                    </div>
+
+
+                </div>
+
+
+
+                <div id="load" class="loader"></div>
+                <div class="msg mr" id="message">
+                    Your Driver's account has been succesfully created. You’ll be notified when there is a passanger for you.
+                </div>
+
+
+                <div class="error mr" id="error">
+                    Something Went wrong!! Please try again
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="drive.js"></script>
+</body>
+
+</html>

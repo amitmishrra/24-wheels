@@ -5,12 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Your Account</title>
+    <title>24-Wheels | Car Rental
+    </title>
+    <link rel="stylesheet" href="home.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("7JPlkoF3xDWkv7XjM");
+        })();
+    </script>
 </head>
-<link rel="stylesheet" href="signin.css">
 
 <body>
-    <section class="navbar">
+
+    <section id="navbar">
 
         <div class="logo">
             <span id="sp1">24 -</span>
@@ -31,95 +39,168 @@
             <ul class="ul">
                 <li> <a onclick="show()" href="#home">Home</a></li>
 
-                <li> <a onclick="show()" href="#">Book Now</a></li>
+                <li> <a onclick="show()" href="login.html">Log in</a></li>
 
-                <li> <a onclick="show()" href="#">Register</a></li>
+                <li> <a onclick="show()" href="signup.html">Sign up</a></li>
 
-                <li> <a onclick="show()" href="#">Contact Us</a></li>
+                <li> <a onclick="show()" href="#contact">Contact Us</a></li>
 
             </ul>
         </div>
     </section>
 
 
+    <section id="home">
 
 
+        <div class="home1">
+            <h1> Let's get started with 24-Wheels..</h1>
+
+            <form action="book.html"> <button class="cta">
+            <span>Let's go</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button></form>
+        </div>
+
+    </section>
 
     <section id="book">
-        <div class="container">
-
-            <div class="box1">
-
-
-                <h1>Sign Up with 24-Wheels</h1>
-
-                <div>
-
-
-                    <input class="in" type="text" required name="" id="name">
-                    <label class="lab" id="l_n" for="">Name</label>
-
-
-                </div>
-                <div>
-
-
-                    <input class="in" type="text" required name="" id="mail">
-                    <label class="lab" id="l_m  " for="">E-mail</label>
-
-                </div>
-                <div>
-
-
-                    <input class="in" type="tel" required name="" id="tel">
-                    <label class="lab" id="l_t" for="">Number</label>
-
-                </div>
-                <div>
-
-
-                    <input class="in" type="password" required name="" id="pass">
-                    <label id="l_p" class="lab" for="">Password</label>
-
-                </div>
-
-
-                <div>
-                    <button class="btn" type="submit" onclick="sig();" id="btn"> Sign In</button></div>
-
-                <div id="load" class="loader"></div>
-            </div>
-
-
-
-
-
-            <div id="error" class="error">
-                invalid details
-            </div>
-
-            <div id="succ" class=succ>Account Created Succesfully. Click Here to <a class="a" href="/login.html">Log-in</a></div>
-
-
-
-            <div alredy>Already have an account.
-                <Span><a class="a" href="login.html"> Log-in </a></Span>
-
-            </div>
+        <div class="box1">
+            <h1>
+                We have the best solution for vehicles
+            </h1>
+            <p>At the age of rejecting, are you getting rejected by auto walas? Say no to them, and hire your ride now. <br> The perfect way to get through your everyday travel needs. vehicles are available 24/7 and you can book and travel in an instant.
+                With rides starting from as low as Rs. 6/km, you can choose from a wide range of options!</p>
+            <br>
+            <form action="book.html">
+                <div> <button type="submit" class="cta">
+                <span>Book Now</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button></div>
+            </form>
 
         </div>
 
 
+        <img src="images/book.png" alt="">
 
 
-        <!-- <div class="txt">
+    </section>
 
+    <section id="selfride">
+
+        <img src="images/ride.png" alt="">
+
+
+        <div class="box2">
 
             <h1>
-                Start Your Journey with us....
+                Wheels that you want
             </h1>
-        </div> -->
 
+            <p>
+                Wanna go for a long road trip to chill for the weekend or wanna give your loved one a long ride but don't have vehicle? Hire here with personalised choice of vehicle and let the fun begin!!! <br> No need for worrying abt those long bills
+                and dreams of owing your dream vehicle, just get one from 24 wheels , a 24×7 solution for your decreasing savings!!
+            </p>
+            <br><br>
+            <form action="ride.html"><button class="cta">
+                <span>Self Ride</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button></form>
+        </div>
+
+    </section>
+    <section id="rent">
+        <div class="box3">
+
+            <h1>
+                Rent and Earn
+            </h1>
+
+            <p>
+                Want your pocket to be heavy by the end of the month? Idle vehicle ? Why not earn from it. <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore illum eveniet velit eaque expedita explicabo temporibus sed, provident adipisci
+                accusamus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo!
+            </p>
+            <br><br>
+            <form action="rent.html">
+                <button class="cta">
+                <span>Rent now</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button>
+            </form>
+        </div>
+
+        <img src="images/rent.png" alt="">
+    </section>
+
+
+
+    <section id="drive">
+
+        <img src="images/drive.png" alt="">
+        <div class="box4">
+
+            <h1>
+                Drive and Earn, <br> Be your own Boss
+            </h1>
+
+            <p>
+                You can drive and make as much as you want. And, the more you drive, the more you could make. Plus, your fares get automatically deposited weekly. <br>Only drive when it works for you. There’s no office and no boss. That means you’ll always
+                start and stop on your time.
+            </p>
+            <br><br>
+            <form action="drive.html"> <button class="cta">
+            <span>Drive now</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button></form>
+        </div>
+
+
+    </section>
+
+
+    <section id="services">
+
+        <h1> Why ride with us?</h1>
+
+
+        <div class="box5">
+
+            <div class="b">
+                <h3>Safe & Secure</h3>
+                <img src="images/safe.jpg" alt="">
+                <p>Verified drivers, well serviced vehicles, and other security features</p>
+            </div>
+            <div class="b">
+                <h3>24/7 available</h3>
+                <img src="images/ava.jpg" alt="">
+                <p>We are availabe 24/7 on you service. Our team will always be there for you</p>
+
+            </div>
+            <div class="b">
+                <h3>Pocket friendly</h3>
+                <img src="images/pocket.jpg" alt="">
+                <p>We have a wide range of cars in low price that suits every pocket</p>
+            </div>
+
+
+
+        </div>
 
     </section>
 
@@ -128,8 +209,55 @@
 
 
 
+    <section id="contact" class="contact">
+        <h1>Contact Us</h1>
 
-    <script src="signin.js"></script>
+        <div class="cont1">
+
+            <div class="form">
+
+                <div class="bb" id="name">
+
+                    <input type="text" class="txt" required id="nm">
+                    <label class="lab" for="">Name</label>
+                </div>
+
+                <div class="bb" id="mail">
+
+                    <input type="email" class="txt" required id="ml">
+                    <label class="lab" class="txt" for="">Mail</label>
+                </div>
+
+
+                <div class="bb" id="mess">
+                    <textarea required class="txt" id="ms"></textarea>
+                    <label class="lab" id="m" for="">Message</label>
+                </div>
+
+                <button onclick='sendMail()' class="cta">
+                    <span>Send</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </button>
+
+                <h2 id="msg2">Message Sent!</h2>
+
+
+            </div>
+            <img src="./icons/Contact-Us-Vector-Illustration-Part-02-1.jpg" alt="">
+        </div>
+
+    </section>
+
+
+    <footer id="foot">
+        <img src="images/foot.jpg" alt="">
+    </footer>
+
+
+    <script src="index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent & earn </title>
+    <link rel="logo" href="">
+    <link rel="stylesheet" href="rent.css">
+    <script src="https://kit.fontawesome.com/afd97fb027.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+</head>
+
+<body>
+    <section class="navbar">
+
+        <div class="logo">
+            <span id="sp1">24 -</span>
+            <span id="sp2">Wheels</span>
+
+        </div>
+
+
+        <div id="slidebar">
+            <div id="toggle" onclick="show()">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+            <ul class="ul">
+                <li> <a onclick="show()" href="#home">Home</a></li>
+
+                <li> <a onclick="show()" href="#">Book Now</a></li>
+
+                <li> <a onclick="show()" href="#">Register</a></li>
+
+                <li> <a onclick="show()" href="#">Contact Us</a></li>
+
+            </ul>
+        </div>
+    </section>
+
+
+
+    <section id="home">
+
+        <div class="box1">
+
+            <div class="b1">
+
+                <h1>Rent and Earn</h1>
+                <p>
+                    Want your pocket to be heavy by the end of the month? Idle vehicle ? Why not earn from it.
+                </p>
+
+            </div>
+
+
+
+            <div class="b2">
+
+                <div class="bb mr">
+
+
+                    <h1>
+                        Enter your car's Details
+                    </h1>
+
+                    <div class="input mr">
+
+                        <input required type="text" name="name" class="in" id="name">
+                        <label for="" class="lab">Name</label>
+                    </div>
+
+                    <div class="input mr">
+
+                        <input required type="tel" name="number" class="in" id="number">
+                        <label for="" class="lab">Number</label>
+                    </div>
+                    <div class="input mr">
+
+                        <input required type="email" name="mail" class="in" id="mail">
+                        <label for="" class="lab">E-mail</label>
+                    </div>
+
+                    <div class="input mr">
+                        <input required type="email" name="Address" class="in" id="add">
+                        <label for="" class="lab">Address</label>
+
+                    </div>
+
+                    <div class="input mr">
+
+                        <input required type="text" name="model" class="in" id="Model">
+                        <label for="" class="lab">Model</label>
+                    </div>
+
+                    <div class="input mr">
+
+                        <input required type="text" name="vehicle_no" class="in" id="vehicle_no">
+                        <label for="" class="lab">Vehicle No.</label>
+                    </div>
+
+                    <div class="input mr">
+
+                        <select class="in" id="type" name="type">
+                            <option class="vhcl" >Sports Car</option>
+                            <option class="vhcl" >Bike</option>
+                            <option class="vhcl" >Scooty</option>
+                            <option class="vhcl" >SUV</option>
+                            <option class="vhcl" >Sedan</option>
+                            <option class="vhcl" >Open Roof</option>
+                            <option class="vhcl" >XUV</option>
+                        </select>
+                        <label for="" class="lab">Vehicle Type</label>
+
+                    </div>
+
+                    <div class="input mr">
+
+                        <ul id="ul">
+                            <li>
+                                By clicking "Register", you agree to 24-Wheel's Terms of Use and acknowledge you have read the Privacy Policy.
+                            </li>
+                        </ul>
+
+
+                    </div>
+
+
+
+                    <div class="input mr">
+                        <BUtton id="btn1" type="submit" onclick="rent();" class="btn">Register</BUtton>
+                    </div>
+
+
+                </div>
+
+
+
+                <div id="load" class="loader"></div>
+                <div class="msg mr" id="message">
+                    Your Car has been succesfully registered. You’ll be notified when there is a rider for you.
+                </div>
+
+
+                <div class="error mr" id="error">
+                    Something Went wrong!! Please try again
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="rent.js"></script>
+</body>
+
+</html>

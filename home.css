@@ -1,0 +1,733 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background: url(images/bg.jpg);
+    background-attachment: fixed; */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+    color: rgb(255, 255, 255);
+}
+
+#navbar {
+    top: 0px;
+    position: fixed;
+    display: flex;
+    padding: 5px;
+    z-index: 2;
+    height: 50px;
+    width: 100%;
+}
+
+#navbar ul {
+    position: fixed;
+    display: flex;
+    right: 10px;
+    margin-right: 5px;
+    align-items: center;
+    top: 10px;
+}
+
+#navbar ul li {
+    padding-left: 10px;
+    list-style: none;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px;
+}
+
+#navbar ul li a:hover {
+    transition: 0.2s;
+    text-decoration: 6px underline rgb(131, 155, 186);
+    ;
+    ;
+}
+
+.logo {
+    position: fixed;
+    font-size: 35px;
+    pointer-events: none;
+    margin-left: 20px;
+}
+
+.logo #sp1 {
+    color: rgb(152, 146, 146);
+    pointer-events: none;
+}
+
+.logo #sp2 {
+    color: rgb(131, 155, 186);
+    pointer-events: none;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 70px;
+    z-index: -1;
+    width: 100%;
+}
+
+.navbar {
+    background-color: rgb(23, 22, 22);
+    transition: 200ms ease-in-out background-color, 200ms ease-in-out box-shadow;
+}
+
+#home {
+    position: relative;
+    top: 0px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(17, 12, 12, 0.5), rgb(10, 10, 10)), url("images/home\ bg.webp");
+    background-blend-mode: darken;
+    height: 700px;
+}
+
+.home1 {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 40%;
+    top: 180px;
+}
+
+.home1 h1 {
+    font-size: 90px;
+    font-weight: 10px;
+    color: rgb(176, 166, 166);
+}
+
+#book {
+    position: relative;
+    top: 0px;
+    justify-content: space-around;
+    display: flex;
+    box-shadow: 0px 0px 5px 0px #6e6e6e;
+}
+
+.box1 {
+    width: 49%;
+    margin-bottom: 30px;
+}
+
+.box1 h1 {
+    color: #363535;
+    font-size: 70px;
+    padding: 10px;
+}
+
+.box1 p {
+    color: black;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#book img {
+    align-self: center;
+    /* width: 50%;
+    height: 50%; */
+}
+
+#selfride {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 0px 5px 0px #6e6e6e;
+}
+
+.box2 {
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+.box2 h1 {
+    color: #3a3939;
+    font-size: 70px;
+    padding: 10px;
+}
+
+.box2 p {
+    color: #363535;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#selfride img {
+    /* width: 50%;
+    height: 50%; */
+    align-self: center;
+}
+
+#rent {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 0px 5px 0px #6e6e6e;
+}
+
+.box3 {
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+.box3 h1 {
+    color: #3a3939;
+    font-size: 70px;
+    padding: 10px;
+}
+
+.box3 p {
+    color: #363535;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#rent img {
+    position: relative;
+    /* width: 50%;
+    height: 50%; */
+    align-self: center;
+    right: 0px;
+}
+
+#drive {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 0px 3px 0px #6e6e6e;
+}
+
+.box4 {
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+.box4 h1 {
+    color: #3a3939;
+    font-size: 70px;
+}
+
+.box4 p {
+    color: #363535;
+    font-size: 30px;
+}
+
+#drive img {
+    /* width: 50%;
+    height: 50%; */
+    align-self: center;
+}
+
+#services {
+    box-shadow: 0px 0px 5px 0px #6e6e6e;
+}
+
+#services h1 {
+    color: #363535;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box5 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.b {
+    padding: 20px 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.b h3 {
+    color: #363535;
+    text-align: center;
+    font-size: 25px;
+}
+
+.b p {
+    color: #363535;
+    text-align: center;
+}
+
+.b img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* From uiverse.io by @alexmaracinaru */
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    margin: auto;
+    display: block;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: rgb(176, 166, 166);
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #6b6b6b;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #6b6b6b;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #c4c3c3;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+
+.contact {
+    position: relative;
+    top: 100px;
+    margin-bottom: 100px;
+}
+
+.contact h1 {
+    color: #605e5e;
+    font-size: 50px;
+    margin: auto;
+    display: block;
+    width: 283px;
+}
+
+.bb {
+    color: #605e5e;
+}
+
+.cont1 {
+    display: flex;
+}
+
+.form {
+    width: 40%;
+}
+
+.cont1 img {
+    position: absolute;
+    right: 0px;
+    width: 50%;
+}
+
+.lab {
+    color: #605e5e;
+    font-size: 40px;
+    position: absolute;
+    top: 38px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.txt {
+    width: 100%;
+    font-size: 20px;
+    color: #0c0a0a;
+    border: none;
+    box-sizing: border-box;
+    height: 40px;
+    border-bottom: 1px solid #605e5e;
+}
+
+.txt:focus~label {
+    top: -5px;
+    color: rgb(131, 155, 186);
+    border: none;
+}
+
+.txt:focus {
+    border: none;
+    border-bottom: 1px solid rgb(131, 155, 186);
+}
+
+.txt:valid~label {
+    top: -5px;
+}
+
+#ms {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.form {
+    padding: 20px;
+    margin: auto;
+}
+
+.form div {
+    padding-top: 50px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form h2 {
+    font-size: 20px;
+    top: 30px;
+    position: relative;
+    color: #3dd8c9;
+    width: 155px;
+    display: none;
+    margin: auto;
+    border: 1px solid #3dd8c9;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 13px;
+}
+
+#foot {
+    position: relative;
+    margin: auto;
+}
+
+#foot img {
+    width: 50%;
+    margin-top: 30px;
+    bottom: 0px;
+    margin: auto;
+    display: block;
+}
+
+@media screen and (max-width: 1100px) {
+    #home {
+        position: relative;
+        top: 0px;
+        background-size: cover;
+        background-image: linear-gradient(rgba(17, 12, 12, 0.5), rgb(10, 10, 10)), url("images/home\ bg.webp");
+        background-blend-mode: darken;
+        height: 700px;
+        background-size: cover;
+        background-position: center;
+    }
+    .home1 {
+        position: relative;
+        display: block;
+        margin: auto;
+        width: 70%;
+        top: 180px;
+    }
+    .home1 h1 {
+        font-size: 85px;
+        font-weight: 10px;
+        color: rgb(176, 166, 166);
+    }
+    .box1 {
+        width: 50%;
+    }
+    .box1 h1 {
+        color: black;
+        font-size: 40px;
+    }
+    .box1 p {
+        color: black;
+        font-size: 20px;
+    }
+    #book img {
+        width: 50%;
+    }
+    .box2 {
+        width: 50%;
+    }
+    .box2 h1 {
+        color: #3a3939;
+        font-size: 40px;
+    }
+    .box2 p {
+        color: #363535;
+        font-size: 20px;
+    }
+    #selfride img {
+        width: 50%;
+        height: 50%;
+    }
+    .box3 h1 {
+        color: #3a3939;
+        font-size: 40px;
+    }
+    .box3 p {
+        color: #363535;
+        font-size: 20px;
+    }
+    #rent img {
+        width: 50%;
+        height: 50%;
+    }
+    .box3 h1 {
+        color: #3a3939;
+        font-size: 40px;
+    }
+    .box3 p {
+        color: #363535;
+        font-size: 20px;
+    }
+    #drive img {
+        width: 50%;
+        height: 50%;
+    }
+    .box4 h1 {
+        color: #3a3939;
+        font-size: 40px;
+    }
+    .box4 p {
+        color: #363535;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar {
+        position: sticky;
+        flex-direction: row-reverse;
+        width: auto;
+    }
+    #navbar::before {
+        position: fixed;
+        height: 60px;
+        z-index: 1;
+    }
+    #navbar .logo {
+        position: fixed;
+        z-index: 2;
+        right: 10px;
+    }
+    .logo {
+        font-size: 29px;
+        right: 0px;
+    }
+    #navbar ul {
+        top: 70px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-left: 2.5px;
+        right: 20px;
+        margin-top: 29px;
+    }
+    #navbar ul li a {
+        margin-top: 30px;
+        padding-top: 10px;
+        padding: 10px;
+        display: block;
+        color: rgb(182, 182, 182);
+    }
+    #slidebar #toggle {
+        position: fixed;
+        top: 10px;
+        left: 15px;
+    }
+    #toggle span {
+        height: 5px;
+        width: 40px;
+        background-color: rgb(182, 182, 182);
+        display: block;
+        margin-top: 4px;
+        z-index: 0;
+    }
+    #slidebar {
+        position: absolute;
+        width: 300px;
+        height: 100%;
+        background: #000000d1;
+        left: -330px;
+        transition: .4s;
+        z-index: 10;
+        top: 0px;
+    }
+    #slidebar.active {
+        left: -100px;
+        position: fixed;
+    }
+    #home {
+        position: relative;
+        top: 0px;
+        background-size: cover;
+        background-image: linear-gradient(rgba(17, 12, 12, 0.5), rgb(10, 10, 10)), url("images/home\ bg.webp");
+        background-blend-mode: darken;
+        height: 700px;
+        background-size: cover;
+        background-position: center;
+    }
+    .home1 {
+        position: relative;
+        display: block;
+        margin: auto;
+        width: 100%;
+        top: 180px;
+    }
+    .home1 h1 {
+        font-size: 75px;
+        font-weight: 10px;
+        color: rgb(176, 166, 166);
+    }
+    #book {
+        position: relative;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .box1 {
+        width: 100%;
+    }
+    #book img {
+        width: 100%;
+    }
+    #selfride {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+    .box2 {
+        width: 100%;
+    }
+    #selfride img {
+        width: 100%;
+        align-self: center;
+    }
+    #rent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .box3 {
+        width: 100%;
+    }
+    #rent img {
+        width: 100%;
+        align-self: center;
+    }
+    #drive {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+    .box4 {
+        width: 100%;
+    }
+    #drive img {
+        width: 100%;
+        height: 50%;
+        align-self: center;
+    }
+    #services h1 {
+        color: #363535;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .box5 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .b {
+        padding: 10px 10px;
+        width: 150px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .b h3 {
+        color: #363535;
+        text-align: center;
+        font-size: 20px;
+    }
+    .b p {
+        color: #363535;
+        text-align: center;
+        font-size: 15px;
+    }
+    .b img {
+        width: 100%;
+    }
+    .contact {
+        top: 70px;
+    }
+    .contact h1 {
+        font-size: 30px;
+        width: 170px;
+    }
+    .lab {
+        top: 0px;
+        color: #605e5e;
+        font-size: 20px;
+    }
+    .txt:focus~label {
+        top: -10px;
+    }
+    .txt {
+        width: 200px;
+        height: 25px;
+    }
+    #ms {
+        width: 200px;
+        border-bottom: 1px solid black;
+    }
+    .form div {
+        padding-top: 15px;
+    }
+    .form h2 {
+        font-size: 15px;
+        width: 114px;
+        left: 24px;
+        top: 40px;
+    }
+    #foot {
+        width: 100%;
+    }
+    #foot img {
+        width: 100%;
+        position: relative;
+        margin: auto;
+        bottom: -6px;
+    }
+}
